@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 // importerer hovdkomponentetn til appen
 import App from "./App";
-// Det er en lager på React-root i HTML-elemenet emd id="root" og rendere app kompontet inni strictMODE.
+// Det er en lagere på React-root i HTML-elemenet emd id="root" og rendere app kompontet inni strictMODE.
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

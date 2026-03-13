@@ -1,3 +1,4 @@
+/* bakgrunn og sentrering*/
 body {
   margin: 0;
   background: #222;
@@ -6,29 +7,29 @@ body {
   padding-top: 40px;
   font-family: sans-serif;
 }
-
+/* Det er hovedboks */
 main {
   background: #eee;
   padding: 20px;
   border-radius: 16px;
   width: 280px;
 }
-
+/* Ekstra toppmarg er fjernet */
 h1 {
   margin-top: 0;
 }
-
+/* Dette er et skjemaoppsett */
 form {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
+ /* Her fjerner den punktliste */
 ul {
   list-style: none;
   padding: 0;
 }
-
+ /* listeelement layout */
 li {
   display: flex;
   justify-content: space-between;
