@@ -1,22 +1,22 @@
 import { useState } from "react";
 
 export default function AddForm({ onAdd }) {
-  const [name, setName] = useState("");
-  const [quantity, setQuantity] = useState("");
-  const [error, setError] = useState("");
+  const [name, setName] = useState(""); // Dette er navnet på varen.
+  const [quantity, setQuantity] = useState(""); // Antall
+  const [error, setError] = useState(""); // viser feilmelding
 
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); // Det er en hindring for å laste inn siden.
 
-    if (!name && !quantity) {
-      setError("Skriv inn vare og antall");
+    if (!name && !quantity) { // Her kan du lege til varen
+      setError("Skriv inn vare og antall"); // tilbakestill skjema
       return;
     }
     if (!name) {
       setError("Skriv inn vare");
       return;
     }
-    if (!quantity) {
+    if (!quantity) { 
       setError("Skriv inn antall");
       return;
     }
@@ -51,7 +51,7 @@ export default function AddForm({ onAdd }) {
 
       <button type="submit">Legg til vare</button>
 
-      {error && <p>{error}</p>}
+      {error && <p>{error}</p>} {/* her vises en feilmelding */}
     </form>
   );
 }
