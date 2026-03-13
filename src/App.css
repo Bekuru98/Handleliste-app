@@ -1,42 +1,46 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
+/* Dette er en annen stil for appens hovedbeholder.*/
+#root {
+  max-width: 1280px;  /* viser som bredde*/
+  margin: 0 auto; /* Det er sentrerer innholdet.. */
+  padding: 2rem; /* Dette er en avstand inne i beholderen.*/
+  text-align: center; /* Sentrerer tekst*/
+}
+/*  Dette viser oss logoens stil. Kan være høyden, avstanden rundt logoen, filer osv.*/
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+/* Dette er en av hoved effekten på logoen.*/
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+/* akkurat her, er en spesiell hovedeffekt for React-logoen*/
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
+/* laget for animasjon som roterer logoen*/
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Startposisjon*/
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Dette er en full rotasjon*/
   }
 }
-
+/* La oss si at hvis brukeren ikke har redusert animasjon aktivert, så starter animasjonen.*/
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear; /* Roterer..*/
   }
 }
-
+/* Det er en stil for kort- eller beholderelement*/
 .card {
-  padding: 2em;
+  padding: 2em; /* Intern avstand*/
 }
-
+/* Det er en stil for tekst som lenker til dokumentasjon*/
 .read-the-docs {
-  color: #888;
+  color: #888; /* Lys grå farge*/
 }
